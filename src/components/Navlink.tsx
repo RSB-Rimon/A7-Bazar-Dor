@@ -14,14 +14,9 @@ const Navlink = async () => {
   const filterNavs = data.filter((n) => n.slug);
 //   console.log(navdata);
   return (
-   <div className="container mx-auto flex  gap-2 p-3  shadow-sm ">
-  <Link
-    href="/"
-    className="flex items-center gap-2 px-4 py-2 rounded-lg font-semibold text-gray-800 hover:bg-gray-100 hover:text-blue-600 transition-all duration-200"
-  >
-    🏠
-    <span>হোম</span>
-  </Link>
+ <div className="bg-white shadow-sm">
+    <div className="container mx-auto flex  gap-2 p-2    ">
+ 
 
   {filterNavs.map((n, i) => (
     <Link
@@ -34,6 +29,7 @@ const Navlink = async () => {
     </Link>
   ))}
 </div>
+ </div>
   );
 };
 
