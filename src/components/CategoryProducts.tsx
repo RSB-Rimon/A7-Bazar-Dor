@@ -19,7 +19,7 @@ const CategoryProducts = ({
   category: Category | undefined;
 }) => {
   const [sort, setSort] = useState("default");
-
+// short kora holo
   const sortedProducts = [...products].sort((a, b) => {
     if (sort === "low") return a.today - b.today;
     if (sort === "high") return b.today - a.today;
@@ -49,7 +49,7 @@ const CategoryProducts = ({
 
   return (
     <section className="container mx-auto px-4 py-6">
-      <div className="mb-6 rounded-xl border bg-white p-5">
+      <div className="mb-6 rounded-xl   bg-white p-5">
         <div className="flex items-center gap-3">
           <span className="text-4xl">{category.icon}</span>
 
@@ -68,7 +68,7 @@ const CategoryProducts = ({
         <p className="text-sm text-gray-500">
           মোট {products.length}টি পণ্য পাওয়া গেছে
         </p>
-
+{/* ai Jaigai short kora holo  */}
         <div className="flex items-center gap-2">
           <label htmlFor="sort" className="text-sm">
             সাজান:
@@ -78,9 +78,9 @@ const CategoryProducts = ({
             id="sort"
             value={sort}
             onChange={(e) => setSort(e.target.value)}
-            className="rounded-lg border bg-white px-3 py-2 text-sm outline-none"
+            className="rounded-lg  bg-white px-3 py-2 text-sm outline-none"
           >
-            <option value="default">ডিফল্ট</option>
+            <option className="" value="default ">ডিফল্ট</option>
             <option value="low">দাম: কম থেকে বেশি</option>
             <option value="high">দাম: বেশি থেকে কম</option>
           </select>

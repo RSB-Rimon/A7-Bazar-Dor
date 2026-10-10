@@ -3,6 +3,7 @@ import React from "react";
 // import logo from "../../public/images.png";
 import logo from "../../public/logo-icon.png";
 import Navlink from "./Navlink";
+import UserInfo from "./UserInfo";
 // import Navlink from "./Navlink";
 
 const Navbar = () => {
@@ -39,15 +40,7 @@ const Navbar = () => {
     </div>
 
     {/* Auth Buttons */}
-    <div className="flex items-center gap-2">
-      <button className="px-4 py-2 rounded-lg border border-gray-300 text-gray-700 font-medium text-sm hover:bg-gray-100 transition">
-        সাইন আপ
-      </button>
-
-      <button className="px-4 py-2 rounded-lg bg-[#05893e] text-white font-medium text-sm hover:bg-[#057b38] shadow-sm transition">
-        সাইন ইন
-      </button>
-    </div>
+   <UserInfo />
 
   </div>
  <Navlink />
