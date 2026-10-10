@@ -24,9 +24,11 @@ const UserInfo = () => {
         </button>
        </Link>
 
+       <Link href="/sign-in">
         <button className="px-4 py-2 rounded-lg bg-[#05893e] text-white font-medium text-sm hover:bg-[#057b38] shadow-sm transition">
           সাইন ইন
         </button>
+       </Link>
       </div>
         }
       

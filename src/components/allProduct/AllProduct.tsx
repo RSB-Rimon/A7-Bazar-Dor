@@ -1,8 +1,11 @@
 import React from 'react';
 import { ItemType } from '../ProductType';
+import Link from 'next/link';
 
 const AllProduct = ({data}:{data:ItemType[]}) => {
     return (
+    <>
+    <Link href={'/'}>
      <section className='container mx-auto mt-5 px-1'>
       <h2 className="text-xl font-bold">সব পণ্য</h2>
 
@@ -59,6 +62,10 @@ const AllProduct = ({data}:{data:ItemType[]}) => {
         ))}
       </div>
     </section>
+    
+    </Link>
+    
+    </>
     );
 };
 
