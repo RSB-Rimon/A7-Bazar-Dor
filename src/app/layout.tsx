@@ -29,14 +29,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col ">
         <div>
           <Navbar />
-       <main>
-          <Marquee />
-        {children}
-             <ToastContainer />
-
-       </main>
+          <main>
+            <Marquee />
+            {children}
+          </main>
+          <ToastContainer />
         </div>
-      <Footer />
+        <Footer />
       </body>
     </html>
   );

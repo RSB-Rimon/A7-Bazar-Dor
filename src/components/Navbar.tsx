@@ -4,6 +4,7 @@ import React from "react";
 import logo from "../../public/logo-icon.png";
 import Navlink from "./Navlink";
 import UserInfo from "./UserInfo";
+import Link from "next/link";
 // import Navlink from "./Navlink";
 
 const Navbar = () => {
@@ -27,6 +28,7 @@ const Navbar = () => {
         />
       </div>
 
+    <Link href={'/'}>
       <div>
         <h1 className="text-xl md:text-2xl font-extrabold tracking-tight text-gray-900">
           বাজার দর 
@@ -37,6 +39,7 @@ const Navbar = () => {
           {date}
         </p>
       </div>
+    </Link>
     </div>
 
     {/* Auth Buttons */}
