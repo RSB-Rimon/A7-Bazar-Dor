@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ItemType } from "./ProductType";
+import { notFound } from "next/navigation";
 
 
 interface Category {
@@ -26,26 +27,9 @@ const CategoryProducts = ({
     return 0;
   });
 
-  if (!category || products.length === 0) {
-    return (
-      <div className="py-20 text-center">
-        <h2 className="text-2xl font-bold">
-          দুঃখিত! কোনো পণ্য পাওয়া যায়নি
-        </h2>
-
-        <p className="my-3 text-gray-500">
-          এই ক্যাটাগরিতে কোনো পণ্য নেই।
-        </p>
-
-        <Link
-          href="/"
-          className="inline-block rounded-lg bg-green-600 px-5 py-3 text-white"
-        >
-          হোম পেজে ফিরে যান
-        </Link>
-      </div>
-    );
-  }
+ if (!category || products.length === 0) {
+  notFound();
+}
 
   return (
     <section className="container mx-auto px-4 py-6">

@@ -15,7 +15,7 @@ const PriceRisers = ({ data }: { data: ItemType[] }) => {
         আজ দাম বেড়েছে ▲
       </h2>
 
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 ">
         {products.map((item) => (
           <div key={item.id} className="rounded-xl border p-4 shadow-sm bg-white border-none">
             <div className="mb-3 text-4xl">{item.image}</div>

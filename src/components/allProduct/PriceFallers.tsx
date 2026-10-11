@@ -1,5 +1,6 @@
 import React from 'react';
 import { ItemType } from '../ProductType';
+import Link from 'next/link';
 
 const PriceFallers = ({data}:{data:ItemType[]}) => {
      const products = data
@@ -13,8 +14,11 @@ const PriceFallers = ({data}:{data:ItemType[]}) => {
         আজ দাম কমেছে ▼
       </h2>
 
-      <div className="grid grid-cols-1 gap-4  sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  ">
+      <div className="grid grid-cols-1 gap-4  sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3  ">
         {products.map((item) => (
+         <Link 
+         key={item.id} 
+          href={`'/product/${item.slug}`}>
           <div key={item.id} className="rounded-xl border p-4 shadow-sm border-none bg-white">
             <div className="mb-3 text-4xl">{item.image}</div>
 
@@ -37,6 +41,7 @@ const PriceFallers = ({data}:{data:ItemType[]}) => {
               </span>
             </div>
           </div>
+         </Link>
         ))}
       </div>
     </section>

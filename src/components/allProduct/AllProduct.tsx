@@ -12,7 +12,7 @@ const AllProduct = ({ data }: { data: ItemType[] }) => {
                 বাজারের সব নিত্যপ্রয়োজনীয় পণ্যের আজকের দাম দেখুন।
             </p>
 
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
                 {data.map((item) => (
                     <Link
                         href={`/product/${item.id}`}

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import hero from "../../public/bazar-hero.png";
+import Link from "next/link";
 
 const HeroSection = () => {
   const date = new Date().toLocaleDateString("bn-BD", {
@@ -26,9 +27,11 @@ const HeroSection = () => {
             এক জায়গায়।
           </p>
 
+         <Link href='/src/components/allProduct'>
           <button className="mt-4 rounded-md bg-green-600 px-4 py-2 text-xs font-medium text-white shadow hover:bg-green-700">
             সব পণ্য দেখুন
           </button>
+         </Link>
         </div>
 
         {/* Image */}

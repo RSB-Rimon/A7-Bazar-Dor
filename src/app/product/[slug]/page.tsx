@@ -1,3 +1,4 @@
+import { notFound } from "next/navigation";
 
 const DetailsPage = async ({
     params,
@@ -12,13 +13,9 @@ const DetailsPage = async ({
 
     const productData = await res.json();
 
-    if (!productData?.id) {
-        return (
-            <div className="container mx-auto p-5">
-                Product not found
-            </div>
-        );
-    }
+     if (!res.ok || !productData?.id) {
+    notFound();
+  }
 
     const prices = [
         {
