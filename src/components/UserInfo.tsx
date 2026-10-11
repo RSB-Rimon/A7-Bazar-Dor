@@ -4,6 +4,7 @@
 import { authClient } from "@/lib/auth-client";
 import Link from "next/link";
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 const UserInfo = () => {
     const { data: session } = authClient.useSession();
@@ -11,8 +12,13 @@ const UserInfo = () => {
     const [open, setOpen] = useState(false);
 
     const hendleSignOut = async () => {
+        try {
         await authClient.signOut();
+        toast.success("Successfully signed out!");
         setOpen(false);
+    } catch (error) {
+        toast.error("Sign out failed!");
+    }
     };
 
     return (
