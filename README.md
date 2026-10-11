@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+##Project name 
+বাজার দর (BazarDor)
 
-## Getting Started
+##Description
+BazarDor is a simple product price website. Users can see different products and their current prices. It helps users know which product prices are going up or down.
 
-First, run the development server:
+##Technologies used
+.Next.js
+.React.js
+.TypeScript
+.Tailwind CSS
+.REST API
+.Better Auth
+.React Toastify
+.DaisyUI, Hero UI
+## 5 key features of the project
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1.View Products — Users can see all products.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2.Product Details — Users can see product details and prices.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3.Category Wise Products — Users can find products by category.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4.Price Changes — Users can see which product prices are going up or down.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+5User Authentication — Users can sign up, sign in, and sign out.
